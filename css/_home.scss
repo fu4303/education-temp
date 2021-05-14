@@ -1,0 +1,45 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    @media(max-width: 767px){
+        grid-template-columns: 1fr;
+        min-height: 90vh;
+    }
+    #curve{
+        position: absolute;
+        opacity: 0.5;
+    }
+    .home-content{
+        margin-top: 100px;
+        
+        h1{
+            font-size: 2.5rem;
+            @media(max-width: 767px){
+                font-size: 2rem;
+            }
+
+            span{
+                color: #6452da;
+            }
+        }
+        p{
+            width: 80%;
+            margin: 20px 0;
+            @media(max-width: 767px){
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+        @media(max-width: 767px){
+            margin-top: 150px;
+            text-align: center;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+    
+}

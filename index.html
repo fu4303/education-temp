@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="css/navbar.css">
     <title>Sasi's Online Classes</title>
 </head>
-<body>
+<body style="min-height: 500vh;">
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="nav-logo">SASI'S</a>
+            <a href="#" class="nav-logo">EDU</a>
             <input autofocus class="search" type="text" placeholder="search for anything">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Instructors</a>
+                    <a href="#courses" class="nav-link">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Courses</a>
+                    <a href="#instructor" class="nav-link">Instructors</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
@@ -50,8 +50,124 @@
         </nav>
     </header>
 
+    <div class="container">
+        <div class="login-container">
+            <div class="close close-login">
+                <img src="images/icons/close.svg" alt="">
+            </div>
+            <h1>Login</h1>
+            <form>
+                <input type="text" name="username" id="" placeholder="username">
+                <input type="password" name="password" id="" placeholder="password">
+                <button class="btn">Login</button>
+                <a href="#"><p>forgot password?</p></a>
+            </form>
+            <div class="already">
+                <p>Don't have an account <a id="signup__" href="#">Signup Now</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container_">
+        <div class="signup-container">
+            <div class="close close-signup">
+                <img src="images/icons/close.svg" alt="">
+            </div>
+            <h1>Signup</h1>
+            <form>
+                <input type="text" name="email" id="" placeholder="email">
+                <input type="password" name="password" id="" placeholder="password">
+                <input type="text" name="password" id="" placeholder="Confirm password">
+                <button class="btn">signup</button>
+            </form>
+            <div class="already">
+                <p>Already have an account <a id="login__" href="#">Login</a></p>
+            </div>
+        </div>
+    </div>
 
+    <section class="home" id="home">
+        <img id="curve" src="images/curves.png" alt="">
+        <div class="home-content">
+            <h1> <span>Studying</span> online is now <br> much easier</h1>
+            <p>Edu is an interesting platform that will teach you in more an interactive way</p>
+            <button class="btn">Join For Free</button>
+        </div>
+        <img src="images/online-learning-concept.svg" alt="">
+    </section>
 
+    <section id="about">
+        <div class="about">
+            <div class="image">
+                <img src="images/ThreeImages-Marketing.png" alt="">
+            </div>
+            <div class="about-content">
+                <h1><span>World Class</span> Learning for you</h1>
+                <p>Pursue a promotion, a raise, or switch careers. 89% of learners who have taken a course report career benefits.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="empty"></div>
+        <h1>Our top Courses</h1>
+        <div class="courses-container">
+
+            <div class="left-scroll">
+                <img src="images/icons/left-arrow.svg" alt="">
+            </div>
+            <div class="courses">
+                <!-- inject courses from javascript -->
+            </div>
+            <div class="right-scroll">
+                <img src="images/icons/right-arrow.svg" alt="">
+            </div>
+
+        </div>
+
+        <h1>Categories</h1>
+        <div class="courses categories">
+            <div class="course category">
+                <div class="course-image">
+                    <img src="images/design.jpeg" alt="">
+                </div>
+                <h2 class="course-title">Design</h2>
+                
+            </div>
+            <div class="course category">
+                <div class="course-image">
+                    <img src="images/development.jpeg" alt="">
+                </div>
+                <h2 class="course-title">Development</h2>
+                
+            </div>
+            <div class="course category">
+                <div class="course-image">
+                    <img src="images/music.jpeg" alt="">
+                </div>
+                <h2 class="course-title">Music</h2>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="instructor">
+        <div class="empty"></div>
+        <div class="instructor">
+            <div class="instructor-content">
+                <h1>Become an <span>instructor</span> </h1>
+                <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.
+                </p>
+                <button class="btn">Start Teaching Today</button>
+            </div>
+            <img src="images/teaching.png" alt="">
+        </div>
+
+    </section>
+
+   
+    <script src="js/login.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/courses.js"></script>
 </body>
 </html>

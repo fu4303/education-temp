@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -7,7 +7,8 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -18,53 +19,34 @@ a {
     text-decoration: none;
 }
 
-.header{
-    border-bottom: 1px solid #E2E8F0;
+.btn{
+    border-radius: 20px;
+    border: none;
+    background-color: #6452da;
+    background-image: linear-gradient(to right, #6452da, #5da7e0);
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.25s;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
+.btn:hover{
+    background-color: rgb(93, 70, 148);
+    background-image: linear-gradient(to right, #6452da, #705cec);
+    transform: translateX(0.25rem);
 }
 
-.hamburger {
+.empty{
+    min-height: 100px
+}
+
+.courses::-webkit-scrollbar {
     display: none;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item {
-    margin-left: 5rem;
-}
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-}
-
-.nav-link:hover{
-    color: #482ff7;
-}
-
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
+@import 'home';
+@import 'about';
+@import 'courses';
+@import 'instructor';
+@import 'login';
