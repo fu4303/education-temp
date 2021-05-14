@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="nav-logo">EDU</a>
+            <input autofocus class="search" type="text" placeholder="search for anything">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#instructor" class="nav-link">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </li>
+                
+            </ul>
+            <li class="nav-item avatar">
+                <a href="#" class="nav-link"><img src="images/icons/avatar.svg" alt=""></a>
+            </li>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="empty"></div>
+
+    <section class="checkout-container">
+        <div class="checkout-details">
+            <h1>Checkout</h1>
+            <form>
+                <label class="radio">Credit or Debit Card
+                    <input type="radio" checked="checked" name="radio" value="credit">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Pay with UPI
+                    <input type="radio" name="radio" value="upi">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio">Pay with PayTM
+                    <input type="radio" name="radio" value="paytm">
+                    <span class="checkmark"></span>
+                  </label>
+            </form>
+        </div>
+
+        
+        <div class="summary">
+            <h1>Summary</h1>
+            <p>original price: <span id="o-price">Rs.17280</span> </p>  
+            <hr>
+            <h2>Total:  <span id="t-price">Rs.17280</span></h2> 
+            <p>By completing your purchase you agree to theese Terms and Services</p>
+            <button class="btn">Complete Payment</button>
+        </div>
+
+        <div class="method">
+            <form>
+                <input type="text" placeholder="Name on Card">
+                <input type="text" placeholder="card Number">
+                <div class="group">
+                    <input type="text" name="expiry-month" placeholder="expiry month">
+                    <input type="text" name="expiry-year" placeholder="expiry year">
+                    <input type="text" name="security" id="" placeholder="CVV">
+                </div>
+            </form>
+
+            
+
+            
+        </div>
+    </section>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

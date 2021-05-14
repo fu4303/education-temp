@@ -1,0 +1,121 @@
+.cart-items-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 80vh;
+    @media(max-width: 767px){
+        grid-template-columns: 1fr;
+    }
+    .cart-items{
+        width: 70%;
+        @media(max-width: 767px){
+            width: 100%;
+        }
+        .course-in-cart{
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #00000030;
+
+            @media(max-width: 767px){
+                width: 95%;
+                margin: auto;
+            }
+            img{
+                @media(max-width: 767px){
+                    width: 10rem;
+                }
+            }
+            ._{
+                display: flex;
+                flex-direction: row;
+            }
+            .details{
+                text-align: left;
+                padding: 0 10px;
+                @media(max-width: 767px){
+
+                    font-size: .6rem !important;
+                }
+
+            }
+            .price{
+                font-size: 1.3rem;
+                color: #6452da;
+                @media(max-width: 767px){
+
+                    font-size: 1rem !important;
+                }
+            }
+            .remove{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #00000030;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #00000030;
+                }
+                @media(max-width: 767px){
+                    width: 30px;
+                    height: 30px;
+                }
+                img{
+                    @media(max-width: 767px){
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .price-details{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        h1.total{
+            color: #00000060;
+        }
+        .price{
+            font-size: 3rem;
+        }
+        .checkout{
+            font-size: 2rem;
+            width: 80%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .apply{
+            position: relative;
+            margin-top: 20px;
+            input{
+                height: 40px;
+                width: 60%;
+                font-size: 1rem;
+                padding: 10px;
+                outline: none;
+                
+            }
+            .apply-coupon{
+                position: relative;
+                top: -1px;
+                right: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="./index.html" class="nav-logo">EDU</a>
+            <input autofocus class="search" type="text" placeholder="search for anything">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#instructor" class="nav-link">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#contact" class="nav-link">Contact</a>
+                </li>
+               
+            </ul>
+            <li class="nav-item avatar">
+                <a href="#" class="nav-link"><img src="images/icons/avatar.svg" alt=""></a>
+            </li>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="empty"></div>
+    <section class="cart-items-section">
+        <div class="cart-items">
+            <div class="course-in-cart">
+                <img src="images/react-native.jpg" alt="">
+                <div class="_">
+                    <div class="details">
+                        <h1>React Native Course bootcamp</h1>
+                        <p>By Rahul T</p>
+                    </div>
+                    <h2 class="price">Rs.8400</h2>
+                </div>
+                <div class="remove">
+                    <img src="images/icons/delete.svg" alt="">
+                </div>
+            </div>
+
+            <div class="course-in-cart">
+                <img src="images/web-dev.jpg" alt="">
+                <div class="_">
+                    <div class="details">
+                        <h1>Web development Bootcamp</h1>
+                        <p>By Rahul T</p>
+                    </div>
+                    <h2 class="price">Rs.8400</h2>
+                </div>
+                <div class="remove">
+                    <img src="images/icons/delete.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="price-details">
+            <h1 class="total">Total:</h1>
+            <h1 class="price">Rs.17280</h1>
+            <div class="apply">
+                <input type="text" placeholder="Enter Coupon">
+                <button class="btn apply-coupon">Apply</button>
+            </div>
+            <a href="./checkout.html"><button class="btn checkout">Checkout</button></a>
+        </div>
+    </section>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
