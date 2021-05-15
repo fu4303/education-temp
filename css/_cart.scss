@@ -23,6 +23,7 @@
             padding: 10px;
             border: 1px solid #00000030;
 
+
             @media(max-width: 767px){
                 width: 95%;
                 margin: auto;
@@ -80,6 +81,11 @@
                 }
             }
         }
+
+        .course-in-cart.remove{
+            animation: remove 0.5s forwards;
+        }
+
     }
 
     .price-details{
@@ -117,5 +123,24 @@
                 right: 50px;
             }
         }
+    }
+}
+
+
+@keyframes remove {
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(-50%, 0%);
+    }
+    70%{
+        transform: translate(-100%, 0%);
+    }
+    95%{
+        transform: translate(-120%, 0%);
+    }
+    100%{
+        transform: translate(-150%, 0%);
     }
 }
