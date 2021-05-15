@@ -39,3 +39,49 @@
     }
     
 }
+
+
+.tutors{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .tutor-container{
+        border-radius: 1rem;
+        background-color: #d3cff0;
+        width: 10rem;
+        height: auto;
+        padding: 10px;
+        img{
+            border-radius: 1rem 1rem 0 0;
+            width: 100%;
+        }
+        h1{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 5px 12px;
+        background-color: #d3cff0;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        transition: background-color 0.6s ease;
+    
+        &.active {
+          background-color: #6452da;
+        }
+    }
+}
+
+.fade {
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    from {transform: translateY(20%);} 
+    to {transform: translateY(0);}
+}
