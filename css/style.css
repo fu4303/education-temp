@@ -1203,4 +1203,161 @@ a {
             flex-direction: column;
   }
 }
+
+.contact-container {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact-details h1 {
+  font-size: 2.6rem;
+  margin: 20px 0;
+}
+
+.contact-container .contact-details p {
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+}
+
+.contact-container .contact-details .details {
+  margin-bottom: 20px;
+}
+
+.contact-container .contact-details .details .a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 30px;
+  width: 15rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.contact-container .contact-details .details .a:hover {
+  background-color: #c7c0f8;
+  color: #fff;
+}
+
+.contact-container .contact-details .details .a img {
+  width: 30px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.contact-container .contact-details .details .a p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contact-container .contact-details .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-container .contact-details .social-links img {
+  width: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.contact-form {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 25rem;
+  height: 28rem;
+  background: #7c9eec;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#8ca3d8), to(#d6c5f0));
+  background: linear-gradient(to right, #8ca3d8, #d6c5f0);
+  -webkit-box-shadow: 0 2rem 5rem 0 #00000060;
+          box-shadow: 0 2rem 5rem 0 #00000060;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form form input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #00000030;
+  outline: none;
+}
+
+.contact-form form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #00000030;
+  outline: none;
+}
+
+.contact-form form .btn {
+  width: auto;
+  margin: 20px;
+}
+
+.contact-form form p {
+  font-size: 0.7rem;
+}
 /*# sourceMappingURL=style.css.map */

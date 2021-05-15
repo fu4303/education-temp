@@ -15,19 +15,19 @@
             <input autofocus class="search" type="text" placeholder="search for anything">
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link abc current">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link abc">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#courses" class="nav-link abc">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#instructor" class="nav-link">Instructors</a>
+                    <a href="#instructor" class="nav-link abc">Instructors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link abc">Contact</a>
                 </li>
                 <li class="nav-item desktop-cart cart">
                     <a href="./carts.html" class="nav-link"><img src="images/icons/cart.svg"/></a>
@@ -94,8 +94,8 @@
         </div>
         <img src="images/online-learning-concept.svg" alt="">
     </section>
-
     <section id="about">
+        <div class="empty"></div>
         <div class="about">
             <div class="image">
                 <img src="images/ThreeImages-Marketing.png" alt="">
@@ -192,10 +192,48 @@
 
     </section>
 
+    <section id="contact">
+        <div class="empty"></div>
+        <div class="contact-container">
+            <div class="contact-details">
+                <h1>Contact US</h1>
+                <p>Fill up the form and our Team will get back to you with in 24 hours</p>
+
+                <div class="details">
+                    <div class="phone a">
+                        <img src="images/icons/phone.svg" alt="">
+                        <p>9747406685</p>
+                    </div>
+                    <div class="email a">
+                        <img src="images/icons/mail.svg" alt="">
+                        <p>rahulmanoj@cet.ac.in</p>
+                    </div>
+                    <div class="location a">
+                        <img src="images/icons/location.svg" alt="">
+                        <p>Vadakara, Kerala</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/rahulmanojcet"><img src="images/icons/twitter.svg" alt=""></a>
+                    <a href="https://linkedin.com/in/rahulmanojcet"><img src="images/icons/linkedin.svg" alt=""></a>
+                    <a href="https://wa.me/+919747406685"><img src="images/icons/whatsapp.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="email">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
    <script src="js/instructor.js"></script>
     <script src="js/login.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/courses.js"></script>
-    <script src="js/add-to-cart.js"></script>
 </body>
 </html>

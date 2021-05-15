@@ -1,0 +1,111 @@
+#contact{
+}
+.contact-container{
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 2.6rem;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 1.2rem;
+            margin: 10px 0 30px;
+        }
+
+        .details{
+            margin-bottom: 20px;
+            .a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 25px 30px;
+                width: 15rem;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 1rem;
+                
+                &:hover{
+                    background-color: #c7c0f8;
+                    color: #fff;
+                }
+                
+                img{
+                    width: 30px;
+                    margin-right: 20px;
+                    color: #fff;
+                    
+                }
+                p{
+                    font-size: 1rem;
+                    margin: 0;
+                }
+            }
+        }
+        .social-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                width: 30px;
+                margin: 20px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.contact-form{
+    justify-self: center;
+    align-self: center;
+
+    width: 25rem;
+    height: 28rem;
+    background: #7c9eec;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #839dda, #ddc7ff);
+    background: linear-gradient(to right, #8ca3d8, #d6c5f0);
+    box-shadow: 0 2rem 5rem 0 #00000060;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        input{
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00000030;
+            outline: none;
+        }
+        textarea{
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00000030;
+            outline: none;
+        }
+        .btn{
+            width: auto;
+            margin: 20px;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+
+    }
+}
