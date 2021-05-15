@@ -1,4 +1,5 @@
 #contact{
+    margin-bottom: 100px;
 }
 .contact-container{
     min-height: 100vh;
@@ -8,6 +9,10 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    @media(max-width: 767px){
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
     .contact-details{
         display: flex;
         flex-direction: column;
@@ -37,6 +42,7 @@
                     background-color: #c7c0f8;
                     color: #fff;
                 }
+                
                 
                 img{
                     width: 30px;
@@ -79,6 +85,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media(max-width: 767px){
+        width: 100%;
+        
+    }
     form{
         display: flex;
         flex-direction: column;
